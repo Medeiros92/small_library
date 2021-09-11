@@ -79,3 +79,5 @@ function especificAuthor(author){
     console.log(`Livros do autor ${author}: ${authorbook.join('; ')}`);
 }
 
+//Chama a função especificAuthor
+especificAuthor("T. Harv Eker");
