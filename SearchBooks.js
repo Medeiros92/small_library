@@ -46,7 +46,20 @@ for(let category of booksByCategory) {
     console.log(category.books.length)
 }
 
+//Função countAuthors
+function countAuthors(){
+    let author = [];
 
+    for(let category of booksByCategory){ //Lista as Categorias
+        for(let books of category.books){ // Lista os Livros dentro de Categoria
+            if(author.indexOf(books.author) == -1){ //Se array author não tem elemento author
+                author.push(books.author) //Add author no array author
+            }
+        }
+    }
+
+    console.log('Total de Autores: ', author.length);
+}
 
 
 
