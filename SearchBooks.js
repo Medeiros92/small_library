@@ -64,5 +64,18 @@ function countAuthors(){
 //Chama função countAuthors
 countAuthors();
 
+//Função especificAuthor
+function especificAuthor(author){
+    let authorbook = [];
 
+    for(let category of booksByCategory){ 
+        for(let books of category.books){
+            if(books.author == author){ //Se lbooks tem author com nome Augusto Curry
+                authorbook.push(books.title) //ADD titulo dos livros do author no array
+            }
+        }
+    }
+
+    console.log(`Livros do autor ${author}: ${authorbook.join('; ')}`);
+}
 
