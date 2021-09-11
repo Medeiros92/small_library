@@ -40,6 +40,11 @@ const booksByCategory = [
 const totalCategories = booksByCategory.length
 console.log(totalCategories)
 
+//Quantidade de livros por Categoria
+for(let category of booksByCategory) {
+    console.log('Total de livos da categoria: ', category.category)
+    console.log(category.books.length)
+}
 
 
 
