@@ -36,7 +36,9 @@ const booksByCategory = [
     }
 ];
 
-
+//Quantidade de Categorias
+const totalCategories = booksByCategory.length
+console.log(totalCategories)
 
 
 
