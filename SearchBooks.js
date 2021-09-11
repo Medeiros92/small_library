@@ -61,6 +61,8 @@ function countAuthors(){
     console.log('Total de Autores: ', author.length);
 }
 
+//Chama função countAuthors
+countAuthors();
 
 
 
